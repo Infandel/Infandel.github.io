@@ -1,6 +1,6 @@
 # bike-rent-app
 
-Not fully functional, but i tried my best.
+Not fully functional, but i tried my best. App for gathering data on bikes and their rental trips.
 
 Everything is based on the examples of Workberry school video series on Ember.js
 
