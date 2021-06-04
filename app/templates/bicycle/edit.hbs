@@ -1,0 +1,18 @@
+<div class="slide-out-bg"></div>
+<div class="slide-out">
+  <div class="slide-out-card">
+    {{#link-to "bicycle" class="btn-back"}}
+      <span class="sr-only">Back</span>
+    {{/link-to}}
+
+    <div class="slide-out-heading">
+      <div class="title">
+        <h3>Edit Bicycle: {{model.brand}} {{model.pricePerHour}}</h3>
+      </div>
+    </div>
+
+    <div class="slide-out-content">
+      {{bicycle-form bicycle=model onsubmit=(action "saveBicycle")}}
+    </div>
+  </div>
+</div>

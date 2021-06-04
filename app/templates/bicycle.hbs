@@ -1,0 +1,21 @@
+<div class="panel-heading">
+  <div class="search">
+    {{input type="text" placeholder="Search by Bicycle brand or price" value=search}}
+  </div>
+
+  {{#link-to "bicycle.create" class="btn-new"}}
+    <div class="sr-only">Add new bicycle</div>
+  {{/link-to}}
+</div>
+
+<div class="panel-content">
+  <h3 class="panel-title">Bicycles models and rent price</h3>
+
+  <ul class="collection">
+    {{#each model as |bicycle|}}
+      {{bicycle-item brand=bicycle.brand pricePerHour=bicycle.pricePerHour idBicycle=bicycle.id tagName='li'}}
+    {{/each}}
+  </ul>
+</div>
+
+{{outlet}}

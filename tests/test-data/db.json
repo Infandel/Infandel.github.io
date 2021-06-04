@@ -1,0 +1,57 @@
+{
+  "bicycles": [
+    {
+      "id": 1,
+      "brand": "Country",
+      "pricePerHour": 12
+    },
+    {
+      "id": 2,
+      "brand": "Folla",
+      "pricePerHour": "8"
+    },
+    {
+      "brand": "Fishy",
+      "pricePerHour": 12,
+      "id": 5
+    },
+    {
+      "brand": "Marty",
+      "pricePerHour": "1",
+      "id": 6
+    },
+    {
+      "brand": "Kooo",
+      "pricePerHour": "21",
+      "id": 7
+    },
+    {
+      "brand": "Monster",
+      "pricePerHour": 12,
+      "id": 8
+    }
+  ],
+  "trips": [
+    {
+      "id": 1,
+      "hours": 8,
+      "point": "Kentuki",
+      "bicycleId": 1
+    },
+    {
+      "id": 2,
+      "hours": 9,
+      "point": "Nebraska",
+      "bicycleId": 1
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
+    }
+  ]
+}

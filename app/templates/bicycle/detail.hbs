@@ -1,0 +1,38 @@
+<div class="slide-out-bg"></div>
+
+<div class="slide-out">
+  <div class="slide-out-card">
+    {{#link-to "bicycle.index" class="btn-back"}}
+      <span class="sr-only">Back</span>
+    {{/link-to}}
+
+    <div class="slide-out-heading">
+      <div class="title">
+        <h3>{{model.brand}} {{model.pricePerHour}}</h3>
+
+        <div class="actions">
+          {{#link-to "bicycle.edit" model.id class="btn-pop"}}
+            edit
+          {{/link-to}}
+
+          <button class="btn-recessed" onclick={{action "deleteBicycle" model}}>delete</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide-out-content">
+      <div class="title">
+        <h3>{{this.model.trips.length}} Number of trips for this bike</h3>
+      </div>
+
+      <div class="actions">
+        {{#link-to "bicycle.detail.new-trip" model.id class="btn-secondary btn-add"}}
+          Add a trip
+        {{/link-to}}
+      </div>
+    </div>
+    <div class="slide-out-content"></div>
+  </div>
+</div>
+
+{{outlet}}
