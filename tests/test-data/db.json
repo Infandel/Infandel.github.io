@@ -133,6 +133,20 @@
       "rentDate": "1998-11-10T19:00:00.000Z",
       "bicycleId": 1,
       "id": 17
+    },
+    {
+      "rentPoint": "Western",
+      "rentHours": 9,
+      "rentDate": "1998-11-10T19:00:00.000Z",
+      "bicycleId": 1,
+      "id": 18
+    },
+    {
+      "rentPoint": "Northern",
+      "rentHours": 1,
+      "rentDate": "1999-05-04T18:00:00.000Z",
+      "bicycleId": 1,
+      "id": 19
     }
   ]
 }
