@@ -8,21 +8,26 @@
 
     <div class="slide-out-heading">
       <div class="title">
-        <h3>{{model.brand}} {{model.pricePerHour}}</h3>
-
+        <h3>Model "{{model.brand}}"</h3>
         <div class="actions">
           {{#link-to "bicycle.edit" model.id class="btn-pop"}}
             edit
           {{/link-to}}
 
           <button class="btn-recessed" onclick={{action "deleteBicycle" model}}>delete</button>
-        </div>
+        </div>       
+      </div>
+      <div class="details">
+        <p>
+          <strong>Rent is</strong> 
+          {{model.pricePerHour}}$ per hour
+        </p>        
       </div>
     </div>
 
     <div class="slide-out-content">
       <div class="title">
-        <h3>{{this.model.trips.length}} Number of trips for this bike</h3>
+        <h3>Number of rides for this bike: {{model.trips.length}}</h3>
       </div>
 
       <div class="actions">
@@ -30,8 +35,22 @@
           Add a trip
         {{/link-to}}
       </div>
+      <ul class="book-list">
+        {{#each model.trips as |trip|}}
+          <li class="book">
+            <p class="book-title">
+              {{trip.rentPoint}}
+            </p>
+            <p class="book-isbn">
+              {{trip.rentHours}}
+            </p>
+            <p>
+              {{trip.rentDate}}
+            </p>
+          </li>
+        {{/each}}
+      </ul>
     </div>
-    <div class="slide-out-content"></div>
   </div>
 </div>
 

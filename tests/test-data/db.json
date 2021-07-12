@@ -8,7 +8,7 @@
     {
       "id": 2,
       "brand": "Folla",
-      "pricePerHour": "8"
+      "pricePerHour": 8
     },
     {
       "brand": "Fishy",
@@ -16,42 +16,109 @@
       "id": 5
     },
     {
-      "brand": "Marty",
-      "pricePerHour": "1",
-      "id": 6
-    },
-    {
-      "brand": "Kooo",
-      "pricePerHour": "21",
-      "id": 7
-    },
-    {
       "brand": "Monster",
       "pricePerHour": 12,
       "id": 8
+    },
+    {
+      "brand": "Fischer",
+      "pricePerHour": 6,
+      "id": 9
+    },
+    {
+      "brand": "BMW",
+      "pricePerHour": 8,
+      "id": 10
+    },
+    {
+      "brand": "Joggo",
+      "pricePerHour": 3,
+      "id": 11
     }
   ],
   "trips": [
     {
-      "id": 1,
-      "hours": 8,
-      "point": "Kentuki",
-      "bicycleId": 1
-    },
-    {
-      "id": 2,
-      "hours": 9,
-      "point": "Nebraska",
-      "bicycleId": 1
-    },
-    {
-      "id": 3
-    },
-    {
+      "rentPoint": "Western",
+      "rentHours": "12",
+      "rentDate": "1992-12-11T19:00:00.000Z",
+      "bicycleId": 9,
       "id": 4
     },
     {
+      "rentPoint": "Western",
+      "rentHours": 10,
+      "rentDate": "1998-11-10T19:00:00.000Z",
+      "bicycleId": 9,
       "id": 5
+    },
+    {
+      "rentPoint": "Eastern",
+      "rentHours": 15,
+      "rentDate": "2020-07-07T19:00:00.000Z",
+      "bicycleId": 9,
+      "id": 6
+    },
+    {
+      "rentPoint": "Eastern",
+      "rentHours": 5,
+      "rentDate": "1998-12-09T19:00:00.000Z",
+      "bicycleId": 9,
+      "id": 7
+    },
+    {
+      "rentPoint": "Northen",
+      "rentHours": 7,
+      "rentDate": "1999-11-07T19:00:00.000Z",
+      "bicycleId": 9,
+      "id": 8
+    },
+    {
+      "rentPoint": "Northern",
+      "rentHours": 5,
+      "rentDate": "2010-10-03T18:00:00.000Z",
+      "bicycleId": 1,
+      "id": 9
+    },
+    {
+      "rentPoint": "East",
+      "rentHours": 4,
+      "rentDate": "2012-10-09T18:00:00.000Z",
+      "bicycleId": 1,
+      "id": 10
+    },
+    {
+      "rentPoint": null,
+      "rentHours": null,
+      "rentDate": null,
+      "id": 11
+    },
+    {
+      "rentPoint": "Eastern",
+      "rentHours": 5,
+      "rentDate": "2020-05-04T19:00:00.000Z",
+      "bicycleId": 1,
+      "id": 12
+    },
+    {
+      "rentPoint": "Eastern",
+      "rentHours": 1,
+      "rentDate": "1998-11-10T19:00:00.000Z",
+      "bicycleId": 1,
+      "id": 13
+    },
+    {
+      "rentPoint": "Eastern",
+      "rentHours": 10,
+      "rentDate": null,
+      "bicycleId": 1,
+      "id": 14
+    },
+    {
+      "rentPoint": "East",
+      "rentHours": null,
+      "rentDate": "2020-10-09T19:00:00.000Z",
+      "bicycleId": 9,
+      "id": 15
     }
   ]
 }

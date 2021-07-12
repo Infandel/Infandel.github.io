@@ -8,8 +8,9 @@ export default Component.extend({
     async saveTrip(e) {
       e.preventDefault();
       this.get('onSubmit')({
-        point: this.get('point'),
-        hours: this.get('hours'),
+        rentPoint: this.get('rentPoint'),
+        rentHours: this.get('rentHours'),
+        rentDate: this.get('rentDate'),
         bicycle: this.get('bicycle')
       });
     },
@@ -20,9 +21,12 @@ export default Component.extend({
   },
 
   didReceiveAttrs() {
+    this._super(...arguments);
+
     this.setProperties({
-      point: this.get('trip.point'),
-      hours: this.get('trip.hours'),
+      rentPoint: this.get('trip.rentPoint'),
+      rentHours: this.get('trip.rentHours'),
+      rentDate: this.get('trip.rentDate'),
       bicycle: this.get('trip.bicycle')
     });
   },

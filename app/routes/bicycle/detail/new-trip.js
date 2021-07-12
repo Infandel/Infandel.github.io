@@ -7,8 +7,9 @@ export default Route.extend({
     return {
       bicycle,
       trip: {
-        point: '',
-        hours: '',
+        rentPoint: '',
+        rentHours: '',
+        rentDate: '',
         bicycle
       }
     }
