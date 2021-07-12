@@ -119,6 +119,20 @@
       "rentDate": "2020-10-09T19:00:00.000Z",
       "bicycleId": 9,
       "id": 15
+    },
+    {
+      "rentPoint": "Eastern",
+      "rentHours": 10,
+      "rentDate": "1999-05-04T18:00:00.000Z",
+      "bicycleId": 1,
+      "id": 16
+    },
+    {
+      "rentPoint": "Eastern",
+      "rentHours": 9,
+      "rentDate": "1998-11-10T19:00:00.000Z",
+      "bicycleId": 1,
+      "id": 17
     }
   ]
 }

@@ -27,7 +27,10 @@
 
     <div class="slide-out-content">
       <div class="title">
-        <h3>Number of rides for this bike: {{model.trips.length}}</h3>
+        <h3>Number of rides for this bike: {{model.trips.length}}</h3>        
+      </div>
+      <div class="title">
+        <h3>Average rent time is:</h3>
       </div>
 
       <div class="actions">
@@ -39,13 +42,10 @@
         {{#each model.trips as |trip|}}
           <li class="book">
             <p class="book-title">
-              {{trip.rentPoint}}
+              Rent location is: {{trip.rentPoint}}
             </p>
             <p class="book-isbn">
-              {{trip.rentHours}}
-            </p>
-            <p>
-              {{trip.rentDate}}
+              Rent hours are: {{trip.rentHours}}
             </p>
           </li>
         {{/each}}
