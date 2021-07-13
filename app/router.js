@@ -14,7 +14,7 @@ Router.map(function() {
     });
     this.route('edit', { path: '/:id/edit'});
   });
-  this.route('history');
+  this.route('history', { path: '/history'});
   this.route('error', { path: '/:error'});
   this.route('404', { path: '*path'});
 });

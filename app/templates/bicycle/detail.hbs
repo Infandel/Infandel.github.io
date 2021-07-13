@@ -30,7 +30,7 @@
         <h3>Number of rides for this bike: {{model.trips.length}}</h3>        
       </div>
       <div class="title">
-        <h3>Average rent time is:(empty now)</h3>
+        <h3>Average rent time is: {{model.averageRentTime}}</h3>
       </div>
 
       <div class="actions">
@@ -42,7 +42,7 @@
         {{#each model.trips as |trip|}}
           <li class="book">
             <p class="book-title">
-              Rent location is: <strong>{{trip.rentPoint}}</strong>
+              Rent location is: {{trip.rentPoint}}
             </p>
             <p class="book-isbn">
               Rent hours are: <strong>{{trip.rentHours}}</strong>

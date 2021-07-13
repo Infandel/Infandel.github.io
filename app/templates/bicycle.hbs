@@ -13,7 +13,11 @@
 
   <ul class="collection">
     {{#each model as |bicycle|}}
-      {{bicycle-item brand=bicycle.brand pricePerHour=bicycle.pricePerHour idBicycle=bicycle.id tagName='li'}}
+      {{bicycle-item 
+      brand=bicycle.brand 
+      pricePerHour=bicycle.pricePerHour 
+      idBicycle=bicycle.id 
+      tagName='li'}}
     {{/each}}
   </ul>
 </div>

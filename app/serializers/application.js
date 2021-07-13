@@ -18,7 +18,6 @@ export default DS.JSONSerializer.extend({
   },
 
   serializeBelongsTo(snapshot, json, relationship) {
-    // super.serializeBelongsTo(...arguments);
     let key = relationship.key;
     let belongsTo = snapshot.belongsTo(key);
 

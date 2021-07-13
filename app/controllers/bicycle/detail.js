@@ -1,13 +1,27 @@
 import Controller from '@ember/controller';
-import { inject as service } from '@ember/service';
 
 export default Controller.extend({
-  dataService: service('data'),
   actions: {
-    async deleteBicycle(bicycle) {
-      await bicycle.destroyRecord();
+    // async deleteBicycle(bicycle) {
+    //   await bicycle.destroyRecord();
 
-      this.transitionToRoute('bicycle.index');
+    //   this.transitionToRoute('bicycle.index');
+    // }
+    async deleteBicycle() {
+      try {
+        let trips = this.model.trips.toArray();
+
+        await this.model.destroyRecord();
+
+        trips.forEach(trip => {
+          trip.unloadRecord();
+        });
+
+        this.transitionToRoute('bicycle.index');
+      }
+      catch(e) {
+        this.send('error', e);
+      }
     }
   }
 });

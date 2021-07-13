@@ -1,1 +1,16 @@
+<div class="panel-content">
+  <h3 class="panel-title">Rent history among all bicycles</h3>
+
+  <ul class="collection">
+    {{#each model as |trip|}}
+      {{history-item 
+      rentPoint=trip.rentPoint 
+      rentHours=trip.rentHours
+      rentDate=trip.rentDate
+      bicycleId=trip.bicycleId
+      tagName='li'}}
+    {{/each}}
+  </ul>
+</div>
+
 {{outlet}}
