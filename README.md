@@ -1,5 +1,6 @@
-# bike-rent-app
+For deploying on git pages
 
+<<<<<<< HEAD
 Not fully functional, but i tried my best. App for gathering data on bikes and their rental trips.
 
 Everything is based on the examples of Workberry school video series on Ember.js
@@ -12,3 +13,5 @@ Same goes for reviews building part.
 Hopefully i could find somewhere these missing parts on implementing book and reviews templates.
 
 With all regards. Infandel.
+=======
+>>>>>>> 47810cd91d2beab6f7a34eefa92f61e27b4b8f3e
