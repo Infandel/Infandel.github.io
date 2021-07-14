@@ -1,25 +1,22 @@
 import Route from '@ember/routing/route';
 
-export default Route.extend({  
+export default Route.extend({
 
-  //   model() {
-  //     return Ember.RSVP.hash({
-  //         trips : this.store.findAll('trip'),
-  //         bicycles : this.store.findAll('bicycle')    
-  //     });
-  // },
+// I have no idea what i need to pass here 
+//from power-select to make a proper if-check (tried almost all the params)
 
-  
-  
-  model() {   
-    return this.get('store').findAll('trip');
+  model({ search }) {
+    if (search) {
+      return this.get('store').query('trip', { q: search });
+    }
+    return this.get('store').findAll('trip')
   },
+
+
 
   actions: {
     loading() {
       return false;
     }
-  },
-  
-  
+  }, 
 });

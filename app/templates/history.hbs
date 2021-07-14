@@ -1,5 +1,21 @@
 <div class="panel-content">
   <h3 class="panel-title">Rent history among all bicycles</h3>
+  <div class="field">
+    <label>Rent point:</label>
+    <p class="control">
+      {{#power-select
+        placeholder="Select a renting point"
+        selected=trip
+        searchEnabled=true
+        onchange=(action (mut trip))
+        search=(action "searchTrip")
+        searchField="rentPoint"
+        allowClear=true
+        as |trip| }}
+        {{trip.rentPoint}}
+      {{/power-select}}
+    </p>
+  </div>
 
   <ul class="collection">
     {{#each model as |trip|}}
